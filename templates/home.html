@@ -8,20 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MyWebsite - makerMovement</title>
+    <title>MakerMovement</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type= "text/css" href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static',filename='vendor/font-awesome/css/font-awesome.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../css/agency.css" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/agency.css')}}" rel="stylesheet">
 
   </head>
 
@@ -85,7 +85,7 @@
                     <h4>3D Printed Ebike Solution</h4>
                   </div>
                 </div>
-                <img class="img-fluid" src="../img/portfolio/3dp-ebike.png" alt="">
+                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/3dp-ebike.png')}}" alt="">
               </a>
             </div>
 
@@ -99,8 +99,8 @@
                     <i class="fa fa-clock-o"></i>
                     <h5>Work In Progress</h5>
                   </div>
-                </div>
-                <img class="img-fluid" src="../img/portfolio/hub-mid-drive-ebike.png" alt="">
+                </div> 
+                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/hub-mid-drive-ebike.png')}}" alt="">
               </a>
             </div>
 
@@ -111,7 +111,7 @@
                     <h4>Hub Motor Mid-Drive Ebike</h4>
                   </div>
                 </div>
-                <img class="img-fluid" src="../img/portfolio/hub-mid-drive-ebike.png" alt="">
+                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/hub-mid-drive-ebike.png')}}" alt="">
               </a>
             </div>
 
@@ -126,7 +126,7 @@
                     <h5>Work In Progress</h5>
                   </div>
                 </div>
-                <img class="img-fluid" src="../img/portfolio/cnc-router-cad.png" alt="">
+                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/cnc-router-cad.png')}}" alt="">
               </a>
             </div>
           </div>
@@ -153,7 +153,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="../img/profile-pic-place-holder.png" alt="">
+              <img class="mx-auto rounded-circle" src="{{url_for('static',filename='img/profile-pic-place-holder.png')}}" alt="">
             </div>
 
           </div>
@@ -253,63 +253,63 @@
                   </p>
                 </div>
               </div>
-          </div>
+              </div>
 
-                  <section id="resources">
-                    <div class="container">
-                      <div class="row">
+              <section id="resources">
+                <div class="container">
+                  <div class="row">
 
-                        <div class="col-lg-3">
-                          <h3 class="resource-header">Resources</h3>
-                        </div>
-
-                        <div class="col-lg-9">
-                          <ul class="list-inline">
-                            <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-stl.zip" download>
-                                <i class="fa fa-download fa-2x"></i>
-                                <text class="text-muted">STL files</text>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-CAD.zip" download>
-                                <i class="fa fa-download fa-2x"></i>
-                                <text class="text-muted">CAD files</text>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf">
-                                <i class="fa fa-download fa-2x"></i>
-                                <text class="text-muted">Parts list</text>
-                              </a>
-                            </li>
-                            <!-- <li class="list-inline-item">
-                              <a href="#">
-                                <i class="fa fa-download fa-2x"></i>
-                                <text class="text-muted">Assembly instructions</text>
-                              </a>
-                            </li> -->
-                          </ul>
-                        </div>
-                        <div class="col-lg-3">
-                          <!-- sometext -->
-                        </div>
-                        <div class="col-lg-9">
-                          <ul class="link-list">
-                            <li class="link-list-item">
-                              <a href="https://www.thingiverse.com/thing:2920939"> Thingiverse Page </a>
-                            </li>
-                            <li class="link-list-item">
-                              <a href="https://www.thingiverse.com/thing:2920939"> Thingiverse </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="col-lg-3">
+                      <h3 class="resource-header">Resources</h3>
                     </div>
-                  </section>
 
-        </div>
-      </div>
+                    <div class="col-lg-9">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-stl.zip')}}" download>
+                            <i class="fa fa-download fa-2x"></i>
+                            <text class="text-muted">STL files</text>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-CAD.zip')}}" download>
+                            <i class="fa fa-download fa-2x"></i>
+                            <text class="text-muted">CAD files</text>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a target="_blank" href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf')}}">
+                            <i class="fa fa-download fa-2x"></i>
+                            <text class="text-muted">Parts list</text>
+                          </a>
+                        </li>
+                        <!-- <li class="list-inline-item">
+                                            <a href="#">
+                                              <i class="fa fa-download fa-2x"></i>
+                                              <text class="text-muted">Assembly instructions</text>
+                                            </a>
+                                          </li> -->
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <!-- sometext -->
+                    </div>
+                    <div class="col-lg-9">
+                      <ul class="link-list">
+                        <li class="link-list-item">
+                          <a href="https://www.thingiverse.com/thing:2920939"> Thingiverse Page </a>
+                        </li>
+                        <li class="link-list-item">
+                          <a href="https://www.thingiverse.com/thing:2920939"> Thingiverse </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              </div>
+              </div>
     </div>
 
     <!-- Modal 2 -->
@@ -348,19 +348,19 @@
                         <div class="col-lg-9">
                           <ul class="list-inline">
                             <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-stl.zip" download>
+                              <a href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-stl.zip')}}" download>
                                 <i class="fa fa-download fa-2x"></i>
                                 <text class="text-muted">STL files</text>
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-CAD.zip" download>
+                              <a href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-CAD.zip')}}" download>
                                 <i class="fa fa-download fa-2x"></i>
                                 <text class="text-muted">CAD files</text>
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a href="project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf">
+                              <a target="_blank" href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf')}}">
                                 <i class="fa fa-download fa-2x"></i>
                                 <text class="text-muted">Parts list</text>
                               </a>
@@ -491,7 +491,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                  <img class="img-fluid" src="../img/portfolio/cnc-router-cad.png" alt="">
+                  <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/cnc-router-cad.png')}}" alt="">
                 </div>
                 <div class="col-lg-4 project-text">
                   <p>
@@ -610,18 +610,18 @@
     </div> -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{url_for('static',filename='vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="../js/jqBootstrapValidation.js"></script>
-    <script src="../js/contact_me.js"></script>
+    <script src="{{url_for('static',filename='js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{url_for('static',filename='js/contact_me.js')}}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/agency.min.js"></script>
+    <script src="{{url_for('static',filename='js/agency.min.js')}}"></script>
 
   </body>
 
