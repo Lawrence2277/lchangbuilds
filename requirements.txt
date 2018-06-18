@@ -64,5 +64,4 @@ virtualenv==15.1.0
 websocket-client==0.46.0
 Werkzeug==0.12.2
 wrapt==1.10.11
-xattr==0.6.4
 zope.interface==4.1.1
