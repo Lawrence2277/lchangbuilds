@@ -100,7 +100,7 @@
                     <h5>Work In Progress</h5>
                   </div>
                 </div> 
-                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/hub-mid-drive-ebike.png')}}" alt="">
+                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/filament-extruder.png')}}" alt="">
               </a>
             </div>
 
@@ -242,6 +242,7 @@
                 <div class="modal-body">
                     <h2 class="text-uppercase">3D Printed Ebike Solution</h2>
                     <p class="item-intro text-muted">Designed and fabricated by Lawrence Chang</p>
+                    <p class="item-intro text-muted build-dates">June 2017-May 2018</p>
                 </div>
 
                 <div class="col-lg-8">
@@ -278,8 +279,8 @@
                           </a>
                         </li>
                         <li class="list-inline-item">
-                          <a target="_blank" href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf')}}">
-                            <i class="fa fa-download fa-2x"></i>
+                          <a href="https://docs.google.com/spreadsheets/d/1huflIPlac3I_5U5Bkuziafb73uOPhLZiPclbiq43huU/edit?usp=sharing">
+                              <i class="fa fa-download fa-2x"></i>
                             <text class="text-muted">Parts list</text>
                           </a>
                         </li>
@@ -324,15 +325,27 @@
                 <div class="modal-body">
                     <h2 class="text-uppercase">Filament Recycler</h2>
                     <p class="item-intro text-muted">Designed and fabricated by Lawrence Chang</p>
+                    <p class="item-intro text-muted build-dates">Feburary 2017-May 2017</p>
                 </div>
 
                 <div class="col-lg-8">
-                  <iframe width="600" height="400" src="https://www.youtube.com/embed/94U95aRChPY"></iframe>
+                  <iframe width="600" height="400" src="https://www.youtube.com/embed/FV3bJk5IvG8"></iframe>
                 </div>
                 <div class="col-lg-4 project-text">
-                  <p>
-                    I had recently purchased a 3D printer after saving up enough money from selling fidget spinners. After accumulating many failed prints, I built this recycler to remelt the plastic mulch into useable filament to help negate the costs of new filament. The mechanisms consist of an auger bit inside of a steel tube to push the plastic mulch, and a heating element, controlled by a PID temp controller module and a solid state relay. Although the filament is far from professional quality and likely has many impurities, it can still be used for rougher prints.
-                  </p>
+                    <p>This is a filament making machine, used to melt plastic mulch into useable 3D printer filament.</p>
+                    <p>I had recently purchased a 3D printer after saving up enough money from selling fidget spinners at my high school(this was before they became a meme :p). After accumulating many failed prints, I built this recycler to remelt the plastic mulch into useable filament to help negate the costs of new filament and reduce waste!</p>
+                    <p>This project uses a generic PID temp controller module and SSR to regulate temperature of the hot end while a sprocket driven auger bit, inside of a steel tube, is used to push the plastic forward. Although the filament is far from professional quality and likely has many impurities, it can still be used for rougher prints.</p>
+                    <p>I had recently purchased a 3D printer after saving up enough money from selling fidget spinners. After accumulating many failed prints, I built this recycler to remelt the plastic mulch into useable filament to help negate the costs of new filament. The mechanisms consist of an auger bit inside of a steel tube to push the plastic mulch, and a heating element, controlled by a PID temp controller module and a solid state relay. Although the filament is far from professional quality and likely has many impurities, it can still be used for rougher prints.<br>
+                       Things to improve/watch out for...
+                      <ul>
+                        <li>the thickness of the filament is hard to control</li>
+                        <li>the mulch needs to be very dry to avoid bubbling upon extrusion.</li>
+                        <li>contamination of the raw material clogs up your 3D printer nozzle</li>
+                        <li>filament needs lots of cooling to not "curl up"</li>
+                        <li>mulch funnel needs agitating to keep the plastic flowing into the auger </li>
+                        <li>investigation into a spoon mechanism</li>
+                      </ul>
+                    </p>
                 </div>
               </div>
           </div>
@@ -360,7 +373,7 @@
                               </a>
                             </li>
                             <li class="list-inline-item">
-                              <a target="_blank" href="{{url_for('static',filename='project-downloads/3d-printed-ebike/3dp-ebike-parts-list.pdf')}}">
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1O3HEtYd-x6QwXTE3hxL2qb7jQMaKPFpOIjbVEFCxcHo/edit?usp=sharing">
                                 <i class="fa fa-download fa-2x"></i>
                                 <text class="text-muted">Parts list</text>
                               </a>
@@ -406,6 +419,7 @@
                 <div class="modal-body">
                     <h2 class="text-uppercase">Hub Mid-Drive Ebike</h2>
                     <p class="item-intro text-muted">Designed and fabricated by Lawrence Chang</p>
+                    <p class="item-intro text-muted build-dates">November 2017-Present</p>
                 </div>
 
                 <div class="col-lg-8">
@@ -428,11 +442,11 @@
                         </div>
 
                         <div class="col-lg-9">
-                          <!-- <ul class="list-inline">
+                          <ul class="list-inline">
                             <li class="list-inline-item">
                               <a href="project-downloads/3d-printed-ebike/3dp-ebike-stl.zip" download>
                                 <i class="fa fa-download fa-2x"></i>
-                                <text class="text-muted">STL files</text>
+                                <text class="text-muted">Switch housing STL files</text>
                               </a>
                             </li>
                             <li class="list-inline-item">
@@ -453,7 +467,7 @@
                                 <text class="text-muted">Assembly instructions</text>
                               </a>
                             </li>
-                          </ul> -->
+                          </ul>
                         </div>
                         <div class="col-lg-3">
                           <!-- sometext -->
@@ -488,6 +502,7 @@
                 <div class="modal-body">
                     <h2 class="text-uppercase">Desktop CNC Router</h2>
                     <p class="item-intro text-muted">Designed by Lawrence Chang</p>
+                    <p class="item-intro text-muted build-dates">May 2018-Present</p>
                 </div>
 
                 <div class="col-lg-8">
