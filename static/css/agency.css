@@ -1,9 +1,5 @@
-/*!
- * Start Bootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
-/* body {
+
+body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -40,16 +36,16 @@ section {
 
 section h2.section-heading {
   font-size: 35px;
-  margin-top:50px;
-  margin-bottom: 30px;
+  margin-top:40px;
+  margin-bottom: 0px;
 }
 
 section h3.section-subheading {
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
+  margin-bottom: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
   text-transform: none;
 
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -299,7 +295,6 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-
 .portfolio-modal {
   padding-right: 0px !important;
 }
@@ -322,23 +317,33 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 20px;
 }
 
+.portfolio-modal .modal-dialog .modal-content iframe{
+  padding:15px;
+  border:0px;
+}
+
+.portfolio-modal .modal-content .build-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
 .portfolio-modal .modal-content .project-title-text {
   margin-bottom: 200px;
-  font-size: 18px;
+  font-size: 22px;
   text-align: left;
-  color: red !important;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
 .portfolio-modal .modal-dialog .modal-content .project-text {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-top:50px !important;
-  font-size: 50px;
+  margin-top:30px;
+  font-size: 18px;
   text-align: left;
 }
 
 .portfolio-modal .modal-dialog .modal-content .project-pic {
-  padding-bottom: 200px !important;
+  padding-bottom: 50px;
 }
 
 
@@ -346,7 +351,6 @@ header.masthead .intro-text .intro-heading {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -584,4 +588,4 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
-} */
+}
